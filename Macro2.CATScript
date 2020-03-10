@@ -1,0 +1,7 @@
+Sub CATMain()
+	
+	Dim MyDocument As Document
+	Set MyDocument = CATIA.ActiveDocument
+	MsgBox (MyDocument.Name)
+
+End Sub
