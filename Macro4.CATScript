@@ -1,0 +1,8 @@
+Sub CATMain()
+
+	Dim MyDocument As Part
+	Set MyDocument  = CATIA.ActiveDocument.Part
+	Dim PlnXY As AnyObject
+	Set PlnXY =  MyDocument.OriginElements.PlaneXY
+
+End Sub
