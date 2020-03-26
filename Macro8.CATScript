@@ -1,0 +1,5 @@
+Sub CATMain()
+	FileToOpen = "C:\Users\Technology\Documents\a1.CATPart"
+	Dim ADoc As Document
+	Set Adoc = CATIA.Documents.Open(FileToOpen)
+End Sub
