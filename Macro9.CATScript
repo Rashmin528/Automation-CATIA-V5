@@ -1,0 +1,6 @@
+Sub CATMain()
+	Dim DocFullName As CATBSTR
+	Dim D
+	DocFullName = CATIA.ActiveDocument.FullName
+	D = MsgBox("fullname is:" & chr(34) & DocFullName & ".",64)
+End Sub
