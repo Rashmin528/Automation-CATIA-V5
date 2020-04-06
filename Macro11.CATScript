@@ -1,0 +1,6 @@
+Sub CATMain()
+	Dim MyCatia As Application
+	Set MyCatia = CATIA
+	Dim MyDocument As Document
+	Set MyDocument  = CATIA.ActiveDocument.Close()
+End Sub
