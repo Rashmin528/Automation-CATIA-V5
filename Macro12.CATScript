@@ -1,0 +1,8 @@
+Sub CATMain()
+	Dim DName As CATBSTR
+	Dim Box
+	DName = CATIA.ActiveDocument.FullName
+Box = MsgBox("fullname is:" & Chr(34) & DName & Chr(34) & ".", 64) 
+CATIA.ActiveDocument.SeeHiddenElements = False
+	
+End Sub
