@@ -1,0 +1,6 @@
+Sub CATMain()
+	Dim DName As Document
+	DName = CATIA.ActiveDocument
+	IsReadOnly = CATIA.ActiveDocument.SeeHiddenElements = True
+	
+End Sub
