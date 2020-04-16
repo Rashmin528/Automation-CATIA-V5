@@ -1,0 +1,9 @@
+Sub CATMain()
+	Dim Usel As Selection
+	Set Usel = CATIA.ActiveDocument.Selection
+	If Usel.Count >0 Then
+		For I = 1 To Usel.Count
+			MsgBox(Usel.Item(I).Value.Name)
+		Next
+	End If
+End Sub
