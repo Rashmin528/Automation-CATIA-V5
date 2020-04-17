@@ -1,6 +1,9 @@
 Sub CATMain()
+
 	Dim Name, Input As String
 	Name = ""
-	Input = InputBox("The Name is:",Name)
+
+	Input = InputBox("The Name is:",Batman)
 	MsgBox(Input)
+
 End Sub
