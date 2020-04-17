@@ -1,11 +1,11 @@
 Sub CATMain()
-	Dim A As Application
-	Set A = CATIA	
+	Dim mycatia As Application
+	Set mycatia = CATIA	
 
-	Dim CATDocs As Documents
- 	Set CATDocs = CATIA.Documents
+	Dim mydocs As Documents
+ 	Set mydocs = CATIA.Documents
 	
-	Dim part1 As Document
- 	Set part1   = CATDocs.Add("CATPart")
+	Dim mydocument As Document
+ 	Set mydocument = mydocs.Add("CATPart")
 
 End Sub
