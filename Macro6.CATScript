@@ -1,5 +1,7 @@
 Sub CATMain()
+
 	Dim Box,Length As Integer
 	Length = 10
-	Box = MsgBox("The length is:"&chr(13)&chr(10)&Length&"mm")
+	Box = MsgBox("The length is:" & chr(13) & chr(10) & Length & "mm")
+
 End Sub
