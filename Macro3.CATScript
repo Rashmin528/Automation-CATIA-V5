@@ -1,8 +1,16 @@
 Sub Main()
+	Dim mycatia As Application
+	Set mycatia = CATIA
+	
+	Dim mydoc As Document
+	Set mydoc = CATIA.ActiveDocument
+	
 	Dim MyProduct As Product
 	Set MyProduct  = CATIA.ActiveDocument.Product
+	
 	Dim BAttrib As Parameters
 	Set BAttrib = CATIA.ActiveDocument.Product.UserRefProperties
-	Dim B As BoolParam
-	Set B = BAttrib.CreateBoolean("StandardPart", True)
+	
+	Dim mybool As BoolParam
+	Set mybool = BAttrib.CreateBoolean("StandardPart", True)
 End Sub
