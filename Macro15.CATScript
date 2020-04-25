@@ -1,0 +1,19 @@
+Sub CATMain()
+	Dim What(1)
+	What(0) = "Pad"
+	What(1) = "Point"
+	
+	Dim Usel As Selection
+	Set Usel = CATIA.ActiveDocument.Selection
+	Usel.Clear	
+
+	Dim E As CATBSTR
+	E = Usel.SelectElement2(What,"",False)
+	If E = "Normal" Then
+		MsgBox(Usel.Item(1).Value.Name)
+	Else 
+		MsgBox("Selection Aborted")
+	End If
+	
+	Usel.Clear
+End Sub 
