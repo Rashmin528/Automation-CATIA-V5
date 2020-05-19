@@ -1,0 +1,7 @@
+Sub CATMain()
+	Dim MyList As Selection
+	Set MyList = CATIA.ActiveDocument.Selection
+	MyList.Clear
+	MyList.Search = ".Point.Name = Spot Weld*; All"
+End Sub
+	
