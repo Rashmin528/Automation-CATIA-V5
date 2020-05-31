@@ -1,0 +1,17 @@
+Sub CATMain()
+
+	Dim MyPart As Part
+	Dim MyBody As Body
+	Dim Geos As GeometricElements
+	Dim Geo As GeometricElement
+
+	Set MyPart = CATIA.ActiveDocument.Part
+	Set MyBody = MyPart.MainBody
+	Set Geos = MyBody.Sketches.Item("Sketch.1").GeometricElements
+	If Geos.Count >0 Then
+		For I = 1 To Geos.Count
+			Set Geo = Geos.Item(I)
+			If.Geo.GeometricType = catGeoTypeLine2D Then MsgBox (Geo.Name)
+		Next
+	End If
+End Sub
