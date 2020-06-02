@@ -1,0 +1,9 @@
+Sub CATMain()
+	Dim mySelection As Selection
+	Set mySelection =  CATIA.ActiveDocument.Selection
+	mySelection.Clear
+
+	mySelection.Add CATIA.ActiveDocument.Part.MainBody
+	mySelection.VisProperties.SetRealColor 0,0,0,0
+
+End Sub
