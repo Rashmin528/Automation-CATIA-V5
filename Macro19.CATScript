@@ -1,0 +1,25 @@
+Sub CATMain()
+
+Dim oSelection As Selection
+Set oSelection = CATIA.ActiveDocument.Selection
+
+oSelection.Clear
+
+Dim productDocument1 As Document
+Set productDocument1 = CATIA.ActiveDocument
+
+
+Dim product1 As Product
+Set product1 = productDocument1.Product
+
+Dim products1 As Products
+Set products1 = product1.Products
+
+Dim product2 As Product
+Set product2 = products1.Item(1)
+
+oSelection.Add Product2 
+
+oSelection.VisProperties.SetRealColor 0,255,0,255
+
+End Sub
