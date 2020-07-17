@@ -1,0 +1,7 @@
+Sub CATMain()
+	Dim MyList As Selection
+	Set MyList = CATIA.ActiveDocument.Selection
+	MyList.Clear
+	MyList.Add CATIA.ActiveDocument.Part.MainBody
+	MyList.VisProperties.SetShow catVisPropertyNoShowAttr
+End Sub
