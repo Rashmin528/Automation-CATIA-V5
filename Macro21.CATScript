@@ -1,0 +1,27 @@
+Sub CATMain()
+
+Dim oSelection As Selection
+Set oSelection = CATIA.ActiveDocument.Selection
+
+oSelection.Clear
+
+Dim productDocument1 As ProductDocument
+Set productDocument1 = CATIA.ActiveDocument
+
+Dim product1 As Product
+Set product1 = productDocument1.Product
+
+Dim products1 As Products
+Set products1 = product1.Products
+
+Dim product2 As Product
+Set product2 = products1.Item(5)
+
+oSelection.Add product2
+
+Dim Obj2 As VisPropertySet
+Set Obj2 = oSelection.VisProperties
+
+Obj2.SetShow catVisPropertyShowAttr
+
+End Sub
