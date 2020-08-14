@@ -1,0 +1,8 @@
+Sub CATMain()
+	Dim MyPart As Product
+	Set MyPart = CATIA.ActiveDocument.Product
+	Dim Bat As Parameters
+	Set Bat = CATIA.ActiveDocument.Product.UserRefProperties
+	Dim B As BoolParam
+	Set B = Bat.CreateBoolean("Standard Part", True)
+End Sub
