@@ -1,0 +1,9 @@
+Sub CATMain()
+	Dim MyProduct As Product
+	Set MyProduct = CATIA.ActiveDocument.Product
+	MyProduct.source = 2
+	MyProduct.DescriptionRef = "Supplier Smith"
+	MyProduct.PartNumber = "22"
+	MyProduct.Revision = "A"
+	MyProduct.Nomenclature = "Scew M10"
+End Sub 
