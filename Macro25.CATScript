@@ -1,0 +1,15 @@
+Sub CATMain()
+	Dim A As Appilcation
+	Set A = CATIA
+
+	Dim MyPart As Part
+	Set MyPart = CATIA.ActiveDocument.Part
+
+	Dim MyBodies As Bodies
+	Set MyBodies  = CATIA.ActiveDocument.Part.Bodies
+	
+	Dim S As Body
+	Set S = MyBodies.Add
+	
+	S.Name = "Screw"
+End Sub
